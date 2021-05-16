@@ -1,0 +1,36 @@
+double salario, resultado;
+            int opcao;
+
+            Console.WriteLine("Informe o seu salário: ");
+            salario = double.Parse(Console.ReadLine());
+            Console.WriteLine("Opção 1 | 9% "); 
+            Console.WriteLine("Opcão 2 | 15% ");
+            Console.WriteLine("Opcão 3 | 20% ");
+            Console.WriteLine("Escolha uma opção: ");
+            opcao = int.Parse(Console.ReadLine());
+            Console.ReadLine();
+
+            switch (opcao)
+            {
+                case 1:
+                    resultado = salario + (salario * 9 / 100);
+                    Console.WriteLine("seu novo salário com 9% é R$: " + resultado);
+                    break;
+
+                case 2:
+                    resultado = salario + (salario * 15 / 100);
+                    Console.WriteLine("seu novo salário com 15% é R$: " + resultado);
+                    break;
+
+                case 3:
+                    resultado = salario + (salario * 20 / 100);
+                    Console.WriteLine("seu novo salário com 20% é R$: " + resultado);
+                    break;
+
+                default:
+                    Console.WriteLine("Opcão invalida.");
+                    break;
+
+            }
+                     
+                    Console.ReadLine();
